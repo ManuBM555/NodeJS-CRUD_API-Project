@@ -1,12 +1,18 @@
 const http = require('http');
 require('dotenv').config();
+let movies = require('./data/movies.json');
+
+const getReq = require('./methods/get-request');
+const postReq = require('./methods/post-request');
+const deleteReq = require('./methods/delete-request');
+const putReq = require('./methods/put-request');
 
 
 
 const port = process.env.PORT || 3001;
 
 const server = http.createServer((req, res) => {
-
+    req.movies = movies;
     switch(req.method) {
         case "GET":
             getReq(req, res);
@@ -15,7 +21,7 @@ const server = http.createServer((req, res) => {
             postReq(req, res);
             break;
         case "PUT":
-            getPut(req, res);
+            putReq(req, res);
             break;
         case "DELETE":
             deleteReq(req, res);

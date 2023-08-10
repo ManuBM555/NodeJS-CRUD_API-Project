@@ -1,0 +1,23 @@
+[
+    {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "title": "The Avengers Infinity War",
+        "year": "2018",
+        "genre": "Action, Adventure",
+        "rating": "8.2"
+    },
+    {
+        "id": "12345678-1234-5678-1234-567812345678",
+        "title": "Saptha Sagarada Aache Yello",
+        "year": "2023",
+        "genre": "Romantic, Thriller",
+        "rating": "9.1"
+    },
+    {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+        "title": "Dhoomam",
+        "year": "2023",
+        "genre": "Suspence, Thriller",
+        "rating": "7.4"
+    }
+]
