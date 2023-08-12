@@ -1,9 +1,9 @@
 module.exports = (req,res) => {
     let baseUrl = req.url.substring(0, req.url.lastIndexOf('/') + 1);
-    console.log(baseUrl);
+    // console.log(baseUrl);
 
     let id = req.url.split('/')[3]; 
-    console.log(id);
+    // console.log(id);
 
     const regexV4 = new RegExp(
         /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/
